@@ -2,13 +2,119 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+#root {
+  min-height: 100vh;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body {
+  background-color: rgb(225 239 231);
+}
+
+header a:hover {
+  opacity: 0.8;
+}
+
+header a:active {
+  opacity: 1;
+}
+
+.card {
+  background-color: #cffafe4d;
+}
+
+.start-btn:hover {
+  transform: scale(1.02);
+}
+
+.start-btn:active {
+  transform: scale(0.95);
+}
+
+.game-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #E6B9A6;
+}
+
+.image-marker {
+  position: absolute;
+  height: 0;
+}
+
+.marker {
+  height: 30px;
+  width: 30px;
+  border: 3px dashed rgb(187, 95, 95);
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255, 0.6);
+}
+
+.char-marker {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border: 3px dashed rgb(78, 29, 29);
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255, 0.6);
+}
+
+.selector {
+  background-color:rgb(225 239 231);
+  position: relative;
+  left: 30px;
+  top: -30px;
+}
+
+.selector > .selection-item {
+  padding: 6px;
+  cursor: pointer;
+}
+
+.selector > .selection-item:hover {
+  background-color: #0b0d221a;
+}
+
+.magnify-btn {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background-color: #df997c;
+}
+
+.magnify-btn:hover {
+  opacity: 0.7;
+}
+
+.user-field {
+  border: 1px solid rgb(0, 0, 0, 0.5);
+  border-radius: 4px;
+  padding: 0px 4px;
+  font-size: 15px;
+}
+
+.submit-btn {
+  font-size: 15px;
+  background-color: rgb(76 225 215);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+.submit-btn:hover {
+  opacity: 0.8;
+}
+
+.submit-btn:active {
+  transform: scale(0.97);
+}
+
+table th, table td {
+  padding: 6px 12px;
+}
+
+table > thead {
+  background-color: #F7E7DC;
+}
+
+table > tbody {
+  background-color: #FFF8F3;
 }
