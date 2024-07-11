@@ -10,3 +10,6 @@ A Where's Waldo (Photo Tagging) game. Players must find all the hidden character
 -   Vite
 -   React Router
 -   TailwindCSS
+
+## Link
+https://wheres-waldo-ben1499.netlify.app/
